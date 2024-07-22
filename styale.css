@@ -1,0 +1,824 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Khmer';
+}
+a{
+   color: white;
+   text-decoration: none;
+   font-family: 'Khmer';
+}
+.header{
+   background-color: black;
+   height: 15vh;
+   max-height: 20vh;
+   display: flex;
+   align-items: center;
+   
+}
+.container{
+   width: 90%;
+   margin: 0rem auto;
+}
+#logo{
+   width: 6rem;
+   height: 6rem;
+   align-self: left;
+}
+
+/* Nav Link  */
+
+.nav-link{
+   background-color: #fa1939;
+   display: flex;
+   align-items: center;
+   height: 6vh;
+   max-height: 8vh;
+   overflow: hidden;
+   
+}
+.nav-link a{
+   height: 100%;
+   padding-right:4rem;
+   font-family: Koulen,Arial,Helvetica,sans-serif;
+   font-weight: bold;
+   color: rgb(255, 231, 231);
+}
+span{
+   font-size: 22px;
+   font-family: Koulen,Arial,Helvetica,sans-serif;
+}
+.nav-link a:hover{
+   color: white;
+}
+.active{
+   background-color: rgba(128, 128, 128, 0.371);
+   color: white;
+   padding: 1.8rem;
+}
+.nav-link span{
+   font-weight: bolder;
+}
+
+/* Content  */
+
+.big-wrapper{
+   /* width: 100%; */
+   margin-top: 1rem;
+   display: flex;
+   height: 68vh;
+   overflow: hidden;
+}
+
+.content-wrapper{
+   width: 75%;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+}
+
+#item1, #item3{
+   width: 59.5%;
+   height: 33vh;
+}
+
+#item2, #item4{
+   width: 39.8%;
+   height: 33vh;
+}
+.overlay img{
+   width: 100%;
+   height: 0vh;
+}
+
+
+.right-ads{
+   /* background-color: aquamarine; */
+   display: flex;
+   width: 25%;
+   flex-direction: column;
+   gap: .5rem;
+   margin-left: .5rem;
+
+}
+.right-ads img{
+   color: rgb(135, 134, 134);
+   background-color: rgba(205, 203, 203, 0.545);
+   object-fit: cover;
+   height: 33vh;
+}
+
+.card{
+   height: 13rem;
+   overflow: hidden;
+   position: relative;
+   padding: 1rem;
+   cursor: pointer;
+   transition: .5s;
+   height: 30vh;
+}
+.card img{
+   position: absolute; 
+   top: 0;
+   left: 0;
+   height: 100%;
+   width: 100%;
+   object-fit: cover;
+   z-index: -10;
+}
+
+.card small{
+   position: absolute;
+   left: 0;
+   top: 1rem;
+   background-color: #4390F8;
+   padding:  .5rem 0rem;
+   color: white;
+   font-weight: bold;
+   z-index: 100;
+   width: 4rem;
+   padding-left: 1rem;
+   
+}
+.poligon{
+   background-color: #4390F8;
+   height: 100%;
+   width: 100%;
+   position: absolute;
+   top: 0;
+   right: -3.99rem;
+   clip-path: polygon(0 0%, 0% 100%, 15% 100%);
+}
+.card1 small{
+   position: absolute;
+   left: 0;
+   top: 1rem;
+   background-color: orange;
+   padding:  .5rem 0rem;
+   color: white;
+   font-weight: bold;
+   z-index: 100;
+   width: 7rem;
+   padding-left: 1rem;
+   
+}
+.poligon1{
+   background-color: orange;
+   height: 100%;
+   width: 100%;
+   position: absolute;
+   top: 0;
+   right: -6.99rem;
+   clip-path: polygon(0 0%, 0% 100%, 15% 100%);
+}
+
+.card-content{
+   position: absolute;
+   bottom: 1rem;
+   color: white;
+}
+.card h1{
+   font-family: Battambang,Arial,Helvetica,sans-serif;
+   font-size: 25px;
+   transform: translateY(1rem);
+   transition: transform .5s;
+   font-weight: bolder;
+}
+.card p{
+   font-size: .8rem;
+   margin-top:  .5rem;
+}
+#des{
+   transform: translateY(1rem);
+   opacity: 0;
+   transition:  .5s;
+}
+
+.card .overlay{
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   top: 0;
+   left: 0;
+   background-color: black;
+   opacity: 0.2;
+   transition: .5s;
+}
+
+
+.card:hover h1{
+   font-family: Battambang,Arial,Helvetica,sans-serif;
+   font-size: 30px;
+   transform: translateY(-1rem);
+   color: red;
+}
+.card:hover #des{
+   transform: translateY(-1rem);
+   opacity: 1;
+}
+.card:hover .overlay{
+   opacity: 0.5;
+}
+/* .right-ads img{
+   width: 100%;
+   height: 30vh;
+} */
+
+/* Video  */
+
+.video-container{
+   margin-top: 2rem;
+}
+
+
+.video-title{
+   font-size: 2rem;
+   font-family: Koulen,Arial,Helvetica,sans-serif;
+   background-color: #F2272F;
+   color: white;
+   width: 8.05rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: relative;
+}
+
+
+.title-poligon{
+   background-color: #f2272e;
+   width: 100%;
+   height: 100%;
+   z-index: 10;
+   position: absolute;
+   left: 8rem;
+   top: 0;
+   clip-path: polygon(0 0%, 0% 100%, 15% 100%);
+
+}
+
+
+
+.fa-angle-right{
+   margin-left: 1rem;
+}
+.video-line{
+   background-color: #F2272F;
+   height: 3px;
+   width: 100%;
+}
+
+/* Video  */
+
+.Video-paper{
+   padding: 2rem;
+   box-shadow: 2px 5px 10px gray;
+}
+
+.big-card-warpper{
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: .3rem;
+}
+
+.big-card{
+   overflow: hidden;
+   height: 40vh;
+   cursor: pointer;
+}
+.big-card img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   transition: .5s;
+}
+.image-wrapper{
+   width: 100%;
+   height: 70%;
+   background-color: black;
+}
+
+.big-card h1{
+   font-family: Battambang,Arial,Helvetica,sans-serif;
+   font-size: 1rem;
+   margin-top: 1rem;
+}
+
+.big-card:hover img{
+   transform: scale(0.95)
+}
+
+.smallcard-big-container{
+   margin-top: 1rem;
+   display: flex;
+   justify-content: space-between;
+}
+
+.small-card-wrapper{
+   width: 70%;
+   display: grid ;
+   grid-template-columns: repeat(4, 1fr);
+   gap: 2rem;
+}
+
+.small-card{
+   height: 20vh;
+   overflow: hidden;
+   cursor: pointer;
+}
+.small-card img{
+   width: 100%;
+   height: 100%;
+   transition: .5s;
+}
+.small-card h1{
+   font-family: Battambang,Arial,Helvetica,sans-serif;
+   font-size: .9rem;
+   font-weight: 200;
+}
+
+.small-card:hover img{
+   transform: scale(.95);
+}
+.small-card-ads{
+   width: 30%;
+   margin-left: 1.5rem;
+}
+.small-card-ads img{
+   width: 100%;
+}
+
+.komsan{
+   margin-top: 2rem;
+}
+
+/* Komsan  */
+
+.komsan-title{
+   background-color: #FA5480;
+   width: 9rem;
+}
+.title-poligon-komsan{
+   background-color: #FA5480;
+   clip-path: polygon(0 0%, 0% 100%, 15% 100%);
+   left: 8.95rem;
+}
+
+.komsan-line{
+   background-color: #FA5480;
+}
+
+.komsan-wrapper{
+   display: flex;
+   height: 40%;
+   overflow: hidden;
+
+}
+
+.komsan-big-card{
+   width: 40%;
+   overflow: hidden;
+   background-color: #FA5480;
+   cursor: pointer;
+}
+
+.komsan-big-card img{
+   width: 100%;
+   height: 29vh;
+   transition: .5s;
+}
+.komsan-big-card h1{
+   font-family: Battambang,Arial,Helvetica,sans-serif;
+   font-size: 1.5rem;
+   color: white;
+   margin: 0rem 1rem;
+}
+
+
+
+
+
+
+
+.komsan-small-card-wrapper{
+   width: 60%;
+   height: 100%;
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   margin-left: 2rem;
+   gap: 1rem;
+}
+.komsan-small-card{
+ 
+   height: 64%;
+   background-color: #000000;
+}
+.komsan-small-card img{
+   transition: .5s;
+   width: 100%;
+   height: 13vh;
+   overflow: hidden;
+   cursor: pointer;
+}
+
+.komsan-small-card h1{
+   font-family: Battambang,Arial,Helvetica,sans-serif;
+   font-size: .8rem;
+   font-weight: 200;
+}
+.komsan-big-card:hover img{
+   transform: scale(0.95);
+   
+}
+.komsan-small-card:hover img{
+   
+   
+   transform: scale(0.95);
+} 
+/* Bjecck */
+.komsan-title1{
+   background-color: red;
+   width: 12rem;
+}
+.title-poligon-komsan1{
+   background-color: red;
+   clip-path: polygon(0 0%, 0% 100%, 15% 100%);
+   left: 11.95rem;
+}
+
+.komsan-line1{
+   background-color: red;
+}
+.komsan-big-card1{
+   width: 40%;
+   overflow: hidden;
+   background-color: red;
+   cursor: pointer;
+
+}
+/* .komsan-big-card1 img{
+   width: 100%;
+   height: 29vh;
+   transition: .5s;
+} */
+.komsan-wrapper1{
+   display: flex;
+   height: 40%;
+   overflow: hidden;
+
+}
+
+.komsan-big-card1{
+   width: 40%;
+   overflow: hidden;
+   background-color: red;
+   cursor: pointer;
+
+}
+
+.komsan-big-card1 img{
+   width: 100%;
+   height: 29vh;
+   transition: .5s;
+}
+
+.komsan-big-card1 h1{
+   font-family: Battambang,Arial,Helvetica,sans-serif;
+   font-size: 1.5rem;
+   color: white;
+   margin: 0rem 1rem;
+}
+.komsan-big-card1:hover img{
+   transform: scale(0.95);
+   
+}
+
+/* Givit */
+.komsan-title2{
+   background-color: orange;
+   width: 16rem;
+}
+.title-poligon-komsan2{
+   background-color: orange;
+   clip-path: polygon(0 0%, 0% 100%, 15% 100%);
+   left: 15.95rem;
+}
+.komsan-big-card2{
+   width: 40%;
+   overflow: hidden;
+   background-color: orange;
+   cursor: pointer;
+
+}
+
+.komsan-line2{
+   background-color: orange;
+}
+
+.komsan-wrapper2{
+   display: flex;
+   height: 40%;
+   overflow: hidden;
+
+}
+
+.komsan-big-card2{
+   width: 40%;
+   overflow: hidden;
+   background-color: orange;
+   cursor: pointer;
+
+}
+
+.komsan-big-card2 img{
+   width: 100%;
+   height: 29vh;
+   transition: .5s;
+}
+
+.komsan-big-card2 h1{
+   font-family: Battambang,Arial,Helvetica,sans-serif;
+   font-size: 1.5rem;
+   color: white;
+   margin: 0rem 1rem;
+}
+.komsan-big-card2:hover img{
+   transform: scale(0.95);
+   
+}
+
+/* sporrt  */
+.komsan-title3{
+   background-color: blueviolet;
+   width: 9rem;
+}
+.title-poligon-komsan3{
+   background-color: blueviolet;
+   clip-path: polygon(0 0%, 0% 100%, 15% 100%);
+   left: 8.95rem;
+}
+
+.komsan-line3{
+   background-color: blueviolet;
+}
+.komsan-big-card3{
+   width: 40%;
+   overflow: hidden;
+   background-color: blueviolet;
+   cursor: pointer;
+
+}
+.komsan-wrapper3{
+   display: flex;
+   height: 40%;
+   overflow: hidden;
+
+}
+
+.komsan-big-card3{
+   width: 40%;
+   overflow: hidden;
+   background-color: blueviolet;
+   cursor: pointer;
+
+}
+
+.komsan-big-card3 img{
+   width: 100%;
+   height: 29vh;
+   transition: .5s;
+}
+
+.komsan-big-card3 h1{
+   font-family: Battambang,Arial,Helvetica,sans-serif;
+   font-size: 1.5rem;
+   color: white;
+   margin: 0rem 1rem;
+}
+.komsan-big-card3:hover img{
+   transform: scale(0.95);
+   
+}
+/* deals  */
+
+
+.komsan-title4{
+   background-color: gray;
+   width: 11rem;
+}
+.title-poligon-komsan4{
+   background-color: gray;
+   clip-path: polygon(0 0%, 0% 100%, 15% 100%);
+   left: 10.95rem;
+}
+
+.komsan-line4{
+   background-color: gray;
+}
+.komsan-big-card4{
+   width: 40%;
+   overflow: hidden;
+   background-color: gray;
+   cursor: pointer;
+
+}
+.komsan-wrapper4{
+   display: flex;
+   height: 40%;
+   overflow: hidden;
+
+}
+
+.komsan-big-card4{
+   width: 40%;
+   overflow: hidden;
+   background-color: gray;
+   cursor: pointer;
+
+}
+
+.komsan-big-card4 img{
+   width: 100%;
+   height: 29vh;
+   transition: .5s;
+}
+
+.komsan-big-card4 h1{
+   font-family: Battambang,Arial,Helvetica,sans-serif;
+   font-size: 1.5rem;
+   color: white;
+   margin: 0rem 1rem;
+}
+.komsan-big-card4:hover img{
+   transform: scale(0.95);
+   
+}
+
+/* footer  */
+
+
+.footer{
+   background-color: black;
+   color: white;
+   margin-top: 5rem;
+   padding: 3rem 0rem;
+}
+
+.footer-wrapper{
+   display: grid;
+   grid-template-columns: repeat(3, 2fr);
+}
+
+.left img{
+   height: 60px;
+}
+
+.footer-wrapper p {
+   color: white;
+   font-size: 1rem;
+}
+.footer-wrapper .gray p {
+   color: gray;
+   font-size: 1rem;
+}
+.footer-wrapper h2{
+   font-size: 1rem;
+   margin-top: 1rem;
+}
+
+.footer-wrapper h1 {
+   font-size: 20px;
+   font-family: Koulen,Arial,Helvetica,sans-serif;
+}
+.footer-wrapper h4 {
+   color: gray;
+}
+.footer .left{
+   padding-left: 110px;
+}
+.footer .middle{
+   padding-left: 90px;
+   
+}
+.middle img{
+   height: 60px;
+   padding: 10px;
+   /* display: grid ;
+   grid-template-columns: repeat(4, 1fr); */
+   /* display: block; */
+}
+.footer .right{
+   padding-left: 110px;
+ 
+}
+.social-media{
+   margin-top: 1rem;
+   color: gray;
+}
+.fa-brands{
+   margin: 0rem .2rem;
+   font-size: 1.5rem;
+   cursor: pointer;
+}
+.fa-brands:hover{
+   color: white;
+}
+
+
+
+
+/* Small Screen  */
+
+
+@media only screen and (max-width: 760px){
+
+   .big-wrapper{
+       overflow: auto;
+       flex-direction: column;
+   }
+
+   .content-wrapper{
+       width: 100%;
+       
+   }
+
+   .right-ads{
+       width: 100%;
+   
+   }
+   .right-ads img{
+       object-fit: cover;
+       height: 20vh;
+       margin-top: 1rem;
+   }
+
+   #item1, #item3{
+       width: 50%;
+   }
+   
+   #item2, #item4{
+       width: 50%;
+   }
+   .header{
+       height: 10vh;
+   }
+
+   .big-card{
+       height: 20vh;
+   }
+
+   .small-card{
+       height: 10rem;
+   }
+   .small-card-ads{
+       display: none;
+   }
+   .small-card-wrapper{
+       width: 100%;
+   }
+   .big-card-warpper{
+       grid-template-columns: 1fr;
+   }
+   .small-card-wrapper{
+       grid-template-columns: repeat(2, 1fr);
+   }
+   .komsan-wrapper{
+       flex-direction: column;
+   }
+   .komsan-big-card{
+       width: 100%;
+       display: none;
+   }
+   .komsan-big-card1{
+      width: 100%;
+      display: none;
+  }
+  .komsan-big-card2{
+   width: 100%;
+   display: none;
+}
+.komsan-big-card3{
+   width: 100%;
+   display: none;
+}
+.komsan-big-card4{
+   width: 100%;
+   display: none;
+}
+   .komsan-small-card-wrapper{
+       width: 100%;
+       margin-left: 0rem;
+       grid-template-columns: repeat(2, 1fr);
+   }
+   .footer-wrapper{
+       grid-template-columns: repeat(1, 1fr);
+       text-align: center;
+   }
+   .middle{
+       margin-top: 2rem;
+   }
+
+   .right{
+       margin-top: 2rem;
+   }
+}
